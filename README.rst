@@ -16,9 +16,9 @@ and `jquery.mustache`_.
 .. _ICanHaz.js: http://icanhazjs.com/
 .. _jquery.mustache: https://github.com/AF83/jquery.mustache
 
-**NOTE: Though ** `django-mustachejs` ** was originally developed for mustache-style 
+**NOTE: Though** `django-mustachejs` **was originally developed for mustache-style 
 templates, it can actually be used to embed any type of client-side templates.  It might 
-be better named ** `django-jstemplates` ** or something like that.**
+be better named** `django-jstemplates` **or something like that.**
 
 Quick Usage
 -----------
