@@ -263,6 +263,29 @@ thus templates found in ``MUSTACHEJS_DIRS`` take precedence over templates in
 apps, and templates identified by file glob patterns take precedence over those
 identified by regular expression patterns.
 
+Custom Preprocessors
+--------------------
+
+Before your JavaScript templates are placed into your Django templates, they are run
+through preprocessors.  By default, the only preprocessor enabled is for
+`internationalization (i18n)`_.  The i18n preprocessor finds all text between ``{{#_}}``
+and ``{{/_}}``, translates it with ``gettext``, and inserts the translated text into
+the template, stripping the ``{{#_}}`` and ``{{/_}}`` tags.
+
+You can build your own preprocessors as well.  A good use would be to do things like
+including generated URLs in your templates.  For example, in your template, when you 
+have ``{{reverse_url 'my_url_name'}}``, you might want to run that through Django's
+``reverse`` method.
+
+A preprocessor class is pretty simple.  All it requires is a method with the following
+signature::
+
+    def process(self, content):
+        ...
+
+Where ``content`` is the actual text of the JS template.  Then, just add the dotted
+name of your class ot the ``MUSTACHEJS_PREPROCESSORS`` settings variable.
+
 Custom Flavors
 --------------
 
