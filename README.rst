@@ -1,8 +1,20 @@
+=========================================================
 NOTE: django-mustachejs is now named "django-jstemplate"!
 =========================================================
 
-The source is available at http://github.com/mjumbewu/django-jstemplate. Please
-update your references. Thanks for using the project!
+The source is available at http://github.com/mjumbewu/django-jstemplate, and the
+package is at http://pypi.python.org/pypi/django-jstemplate/. Please
+update your references.
+
+Migration is easy:
+
+- In your settings' ``INSTALLED_APPS``, ``mustachejs`` becomes ``jstemplate``
+- ``MUSTACHEJS_...`` settings become ``JSTEMPLATE_...``
+- In your Django templates, ``{% load mustachejs %}`` becomes
+  ``{% load jstemplate %}``
+
+That's it. If you have any issues, get in touch with me on GitHub or on Twitter
+`@mjumbewu <http://www.twitter.com/mjumbewu>`_. Thanks for using the project!
 
 =================
 django-mustachejs

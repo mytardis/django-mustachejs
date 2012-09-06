@@ -3,11 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+=========================================================
 NOTE: django-mustachejs is now named "django-jstemplate"!
 =========================================================
 
 The docs are available at http://django-jstemplate.readthedocs.org/. Please
-update your references. Thanks for using the project!
+update your references.
+
+Migration is easy:
+
+- In your settings' ``INSTALLED_APPS``, ``mustachejs`` becomes ``jstemplate``
+- ``MUSTACHEJS_...`` settings become ``JSTEMPLATE_...``
+- In your Django templates, ``{% load mustachejs %}`` becomes
+  ``{% load jstemplate %}``
+
+That's it. If you have any issues, get in touch with me on GitHub or on Twitter
+`@mjumbewu <http://www.twitter.com/mjumbewu>`_. Thanks for using the project!
 
 =================
 django-mustachejs
