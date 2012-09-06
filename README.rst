@@ -1,7 +1,7 @@
-NOTE: django-mustachejs is now named "django-jstemplates"!
-==========================================================
+NOTE: django-mustachejs is now named "django-jstemplate"!
+=========================================================
 
-The source is available at https://github.com/mjumbewu/django-jstemplates. Please 
+The source is available at https://github.com/mjumbewu/django-jstemplate. Please 
 update your references. Thanks for using the project!
 
 =================
