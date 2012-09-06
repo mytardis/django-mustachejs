@@ -3,6 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+NOTE: django-mustachejs is now named "django-jstemplate"!
+=========================================================
+
+The docs are available at http://django-jstemplate.readthedocs.org/. Please
+update your references. Thanks for using the project!
+
 =================
 django-mustachejs
 =================
@@ -273,7 +279,7 @@ and ``{{/_}}``, translates it with ``gettext``, and inserts the translated text 
 the template, stripping the ``{{#_}}`` and ``{{/_}}`` tags.
 
 You can build your own preprocessors as well.  A good use would be to do things like
-including generated URLs in your templates.  For example, in your template, when you 
+including generated URLs in your templates.  For example, in your template, when you
 have ``{{reverse_url 'my_url_name'}}``, you might want to run that through Django's
 ``reverse`` method.
 

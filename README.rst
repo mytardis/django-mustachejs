@@ -1,7 +1,7 @@
 NOTE: django-mustachejs is now named "django-jstemplate"!
 =========================================================
 
-The source is available at https://github.com/mjumbewu/django-jstemplate. Please 
+The source is available at http://github.com/mjumbewu/django-jstemplate. Please
 update your references. Thanks for using the project!
 
 =================
@@ -22,8 +22,8 @@ and `jquery.mustache`_.
 .. _ICanHaz.js: http://icanhazjs.com/
 .. _jquery.mustache: https://github.com/AF83/jquery.mustache
 
-**NOTE: Though** ``django-mustachejs`` **was originally developed for mustache-style 
-templates, it can actually be used to embed any type of client-side templates.  It might 
+**NOTE: Though** ``django-mustachejs`` **was originally developed for mustache-style
+templates, it can actually be used to embed any type of client-side templates.  It might
 be better named** ``django-jstemplates`` **or something like that.**
 
 Quick Usage
