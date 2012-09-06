@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+0.8.3-eol
+------------------
+
+* End-of-life.  The project is now maintained at django-jstemplates.
+
 0.8.3
 ------------------
 
