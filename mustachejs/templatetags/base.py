@@ -3,8 +3,6 @@ from django import template
 from ..conf import conf
 from ..loading import find, MustacheJSTemplateNotFound
 
-from .mustacheraw import MustacheRaw
-
 register = template.Library()
 
 
@@ -42,6 +40,8 @@ def mustacheraw(parser, token):
     Prints out raw mustache content
 
     """
+    from .mustacheraw import MustacheRaw
+
     bits = token.contents.split()
     if len(bits) not in [2, 3]:
         raise template.TemplateSyntaxError(
