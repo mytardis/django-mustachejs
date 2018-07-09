@@ -43,7 +43,7 @@ def _get_app_template_dirs():
     for app in conf.INSTALLED_APPS:
         try:
             mod = import_module(app)
-        except ImportError, e:
+        except ImportError as e:
             raise ImproperlyConfigured("ImportError %s: %s" % (app, e.args[0]))
         app_dir = os.path.dirname(mod.__file__)
         for dirname in conf.MUSTACHEJS_APP_DIRNAMES:

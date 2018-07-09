@@ -22,13 +22,13 @@ def _get_finders():
         modpath, cls_name = finder_path.rsplit(".", 1)
         try:
             mod = import_module(modpath)
-        except ImportError, e:
+        except ImportError as e:
             raise ImproperlyConfigured(
                 "ImportError %s: %s" % (modpath, e.args[0]))
 
         try:
             cls = getattr(mod, cls_name)
-        except AttributeError, e:
+        except AttributeError as e:
             raise ImproperlyConfigured(
                 "AttributeError %s: %s" % (cls_name, e.args[0]))
 

@@ -3,10 +3,9 @@ from django import template
 from ..conf import conf
 from ..loading import find, MustacheJSTemplateNotFound
 
-
+from .mustacheraw import MustacheRaw
 
 register = template.Library()
-
 
 
 class BaseMustacheNode(template.Node):
